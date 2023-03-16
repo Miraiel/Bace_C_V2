@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
 using std::cin;
@@ -13,9 +13,9 @@ void main()
 
 #ifdef LOOPS
 
-	int i = 0;				//счетчик цикла
-	int n;					//количество итераций
-	cout << "Введите количество итераций: "; cin >> n;
+	int i = 0;				//СЃС‡РµС‚С‡РёРє С†РёРєР»Р°
+	int n;					//РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№: "; cin >> n;
 	while (i < n)
 	{
 		cout << i << "Loops" << endl;
@@ -25,7 +25,7 @@ void main()
 #endif // LOOPS
 
 	int a;
-	cout << "Полиндром или нет: ";
+	cout << "РџРѕР»РёРЅРґСЂРѕРј РёР»Рё РЅРµС‚: ";
 	cin >> a;
 
 	int temp = a;
@@ -37,10 +37,10 @@ void main()
 	}
 	if (a == z)
 	{
-		cout << "Полиндром. УРЯ)))";
+		cout << "РџРѕР»РёРЅРґСЂРѕРј. РЈР РЇ)))";
 	}
 	else
 	{
-		cout << "НЕА(((";
+		cout << "РќР•Рђ(((";
 	}
 }
