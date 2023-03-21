@@ -6,6 +6,7 @@ using std::cout;
 using std::endl;
 
 //#define LOOPS
+//#define Home_W
 
 void main()
 {
@@ -23,6 +24,8 @@ void main()
 	}
 
 #endif // LOOPS
+
+#ifdef Home_W
 
 	int a;
 	cout << "Полиндром или нет: ";
@@ -43,4 +46,22 @@ void main()
 	{
 		cout << "НЕА(((";
 	}
+
+#endif // Home_W
+
+	int number;
+	cout << "Введите число: "; cin >> number;
+	int buffer = number;
+	int reverse = 0;
+
+	while (buffer > 0)
+	{
+		reverse *= 10;
+		reverse += buffer % 10;
+		buffer /= 10;
+	}
+
+	cout << number << endl;
+	cout << buffer << endl;
+	cout << reverse << endl;
 }
