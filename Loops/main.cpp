@@ -10,6 +10,13 @@ using std::endl;
 //#define Home_W
 //#define WHILE_1
 
+enum KEYS
+{
+	ESC = 27,
+	ENTER = 13,
+	SPACE = 32
+};
+
 void main()
 {
 	setlocale(LC_ALL, "");
@@ -83,11 +90,15 @@ void main()
 		case's': cout << key << "\t" << "Назад" << endl; break;
 		case'a': cout << key << "\t" << "Влево" << endl; break;
 		case'd': cout << key << "\t" << "Вправо" << endl; break;
-		case'esc':cout << "Выход" << endl; break;					//не работает!!!
+
+		case KEYS::ENTER:cout << KEYS::ENTER<<"\t" << "Огонь" << endl; break;
+		case KEYS::SPACE:cout << KEYS::SPACE<<"\t" << "Прыжок" << endl; break;
+		case KEYS::ESC:cout << KEYS::ESC<<"\t" << "Выход" << endl; exit(0);
+
 		default:cout << "Error!";
 		}
 
-	} while (key != 27);
+	} while (true);
 
 
 }
