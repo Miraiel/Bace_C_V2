@@ -15,10 +15,10 @@ enum KEYS
 	ESC = 27,
 	ENTER = 13,
 	SPACE = 32,
-	arrow_forward = 72,
-	arrow_back = 80,
-	arrow_left = 75,
-	arrow_right = 77,
+	ARROW_FORWARD = 72,
+	ARROW_BACK = 80,
+	ARROW_LEFT = 75,
+	ARROW_RIGHT = 77,
 	W = 87,
 	A = 65,
 	D = 68,
@@ -94,7 +94,7 @@ void main()
 	do
 	{
 		key = _getch();
-		if(key==-32)
+		if (key == -32)
 			key = _getch();
 		//cout << (int)key << "\t" << key << endl;
 		switch (key)
@@ -102,41 +102,41 @@ void main()
 		case'w': cout << key << "\t" << "Вперед" << endl; break;
 		case'ц': cout << key << "\t" << "Вперед" << endl; break;
 
-		case KEYS::W:cout << key << "\t" << "Бег вперед" << endl; break;
-		case KEYS::Ц:cout << key << "\t" << "Бег вперед" << endl; break;
+			case KEYS::W:cout << key << "\t" << "Бег вперед" << endl; break;
+			case KEYS::Ц:cout << key << "\t" << "Бег вперед" << endl; break;
 
 		case's': cout << key << "\t" << "Назад" << endl; break;
 		case'ы': cout << key << "\t" << "Назад" << endl; break;
 
-		case KEYS::S: cout << key << "\t" << "Разворот на 180 и по тапкам" << endl; break;
-		case KEYS::Ы: cout << key << "\t" << "Разворот на 180 и по тапкам" << endl; break;
+			case KEYS::S: cout << key << "\t" << "Разворот на 180 и по тапкам" << endl; break;
+			case KEYS::Ы: cout << key << "\t" << "Разворот на 180 и по тапкам" << endl; break;
 
 		case'a': cout << key << "\t" << "Влево" << endl; break;
 		case'ф': cout << key << "\t" << "Влево" << endl; break;
 
-		case KEYS::A: cout << key << "\t" << "Кувырок влево" << endl; break;
-		case KEYS::Ф: cout << key << "\t" << "Кувырок влево" << endl; break;
+			case KEYS::A: cout << key << "\t" << "Кувырок влево" << endl; break;
+			case KEYS::Ф: cout << key << "\t" << "Кувырок влево" << endl; break;
 
 		case'd': cout << key << "\t" << "Вправо" << endl; break;
 		case'в': cout << key << "\t" << "Вправо" << endl; break;
 
-		case KEYS::D: cout << key << "\t" << "Кувырок вправо" << endl; break;
-		case KEYS::В: cout << key << "\t" << "Кувырок вправо" << endl; break;
+			case KEYS::D: cout << key << "\t" << "Кувырок вправо" << endl; break;
+			case KEYS::В: cout << key << "\t" << "Кувырок вправо" << endl; break;
 
 		case KEYS::ENTER:cout << KEYS::ENTER << "\t" << "Огонь" << endl; break;
 		case KEYS::SPACE:cout << KEYS::SPACE << "\t" << "Прыжок" << endl; break;
-	
-		case KEYS::arrow_forward:cout << "\t" << "Движение вперед" << endl; break;
-		case KEYS::arrow_back:cout << "\t" << "Движение назад" << endl; break;
-		case KEYS::arrow_left:cout << "\t" << "Движение влево" << endl; break;
-		case KEYS::arrow_right:cout << "\t" << "Движение вправо" << endl; break;
-		
-			
-		case KEYS::ESC:cout << KEYS::ESC<<"\t" << "Выход" << endl; exit(0);
+
+		case KEYS::ARROW_FORWARD:cout << KEYS::ARROW_FORWARD << "\t" << "Движение вперед" << endl; break;
+		case KEYS::ARROW_BACK:cout << KEYS::ARROW_BACK << "\t" << "Движение назад" << endl; break;
+		case KEYS::ARROW_LEFT:cout << KEYS::ARROW_LEFT << "\t" << "Движение влево" << endl; break;
+		case KEYS::ARROW_RIGHT:cout << KEYS::ARROW_RIGHT << "\t" << "Движение вправо" << endl; break;
+
+
+		case KEYS::ESC:cout << KEYS::ESC << "\t" << "Выход" << endl; exit(0);
 
 		default:cout << "Error!";
 		}
 
 	} while (true);
-	
+
 }
