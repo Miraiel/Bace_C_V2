@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c2ba00a4-f01d-43c8-8fa7-d6994404f527}</ProjectGuid>
-    <RootNamespace>Shooter</RootNamespace>
+    <ProjectGuid>{7b1c54e1-2a31-4dca-b7da-4502eff60db6}</ProjectGuid>
+    <RootNamespace>FOR</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
