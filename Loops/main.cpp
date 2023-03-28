@@ -99,32 +99,15 @@ void main()
 		//cout << (int)key << "\t" << key << endl;
 		switch (key)
 		{
-		case'w': cout << key << "\t" << "Вперед" << endl; break;
-		case'ц': cout << key << "\t" << "Вперед" << endl; break;
-
-			case KEYS::W:cout << key << "\t" << "Бег вперед" << endl; break;
-			case KEYS::Ц:cout << key << "\t" << "Бег вперед" << endl; break;
-
-		case's': cout << key << "\t" << "Назад" << endl; break;
-		case'ы': cout << key << "\t" << "Назад" << endl; break;
-
-			case KEYS::S: cout << key << "\t" << "Разворот на 180 и по тапкам" << endl; break;
-			case KEYS::Ы: cout << key << "\t" << "Разворот на 180 и по тапкам" << endl; break;
-
-		case'a': cout << key << "\t" << "Влево" << endl; break;
-		case'ф': cout << key << "\t" << "Влево" << endl; break;
-
-			case KEYS::A: cout << key << "\t" << "Кувырок влево" << endl; break;
-			case KEYS::Ф: cout << key << "\t" << "Кувырок влево" << endl; break;
-
-		case'd': cout << key << "\t" << "Вправо" << endl; break;
-		case'в': cout << key << "\t" << "Вправо" << endl; break;
-
-			case KEYS::D: cout << key << "\t" << "Кувырок вправо" << endl; break;
-			case KEYS::В: cout << key << "\t" << "Кувырок вправо" << endl; break;
-
-		case KEYS::ENTER:cout << KEYS::ENTER << "\t" << "Огонь" << endl; break;
-		case KEYS::SPACE:cout << KEYS::SPACE << "\t" << "Прыжок" << endl; break;
+		case'w':case'ц': cout << key << "\t" << "Вперед" << endl; break;
+		case KEYS::W:case KEYS::Ц:cout << key << "\t" << "Бег вперед" << endl; break;
+		case's':case'ы': cout << key << "\t" << "Назад" << endl; break;
+		case KEYS::S:case KEYS::Ы:cout << key << "\t" << "Разворот на 180 и по тапкам" << endl; break;
+		case'a':case'ф': cout << key << "\t" << "Влево" << endl; break;
+		case KEYS::A:case KEYS::Ф: cout << key << "\t" << "Кувырок влево" << endl; break;
+		case'd':case'в': cout << key << "\t" << "Вправо" << endl; break;
+		case KEYS::D:case KEYS::В: cout << key << "\t" << "Кувырок вправо" << endl; break;
+		case KEYS::ENTER:case KEYS::SPACE:cout << KEYS::ENTER << "\t" << "Огонь" << endl; break;
 
 		case KEYS::ARROW_FORWARD:cout << KEYS::ARROW_FORWARD << "\t" << "Движение вперед" << endl; break;
 		case KEYS::ARROW_BACK:cout << KEYS::ARROW_BACK << "\t" << "Движение назад" << endl; break;
